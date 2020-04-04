@@ -10,17 +10,42 @@
 </head>
 <body>
     <div class="tabs">
-        <input type="radio" name="inset" value="" id="tab_1" >
+        <input type="radio" name="inset" value="" id="tab_1" checked>
         <label for="tab_1">Работа в классе</label>
 
         <input type="radio" name="inset" value="" id="tab_2" >
         <label for="tab_2">Контрольные работы</label>
 
         <div id="txt_1">
-            <p>Произвольное содержимое...</p>
-            <p>Произвольное содержимое...</p>
-            <p>Произвольное содержимое...</p>
+            <form name="selected">
+                <select id="select_group">
+                    <option id="gr1">DevEducation 9/12/19 group 1 </option>
+                    <option id="gr2">DevEducation 9/12/19 group 2 </option>
+                </select>
+                <select id="select_discipline">
+                    <option>C#</option>
+                    <option>HTML & CSS</option>
+                    <option>JavaScript</option>
+                    <option>Unit тестирование в С#</option>
+                    <option>Web API</option>
+                    <option>SQL</option>
+                    <option>Entity Framework</option>
+                </select>
+                <br/>               
+
+            </form>
+
+            
+            <div id="base_students_gr1" for="gr1">
+               
+            </div>
+
+            <div id="base_students_gr1" for="gr2">
+                
+            </div>
         </div>
+
+
         <div id="txt_2">
             <p>Вторая вкладка</p>
         </div>

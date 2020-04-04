@@ -45,3 +45,17 @@
 
 #tab_1:checked ~ #txt_1 ,
 #tab_2:checked ~ #txt_2 { display: block;}
+
+
+#select_group{
+    
+    margin-left:130px;
+
+}
+
+#select_discipline {
+    margin-left:30px;
+}
+
+#gr1::selection ~ #base_students_gr1,
+#gr2::selection~#base_students_gr2 {display: block;}
