@@ -80,6 +80,7 @@
     <Content Include="main.html" />
     <Content Include="script.js" />
     <Content Include="style.css" />
+    <Content Include="styleR.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
