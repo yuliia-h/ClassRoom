@@ -1,13 +1,12 @@
 ﻿body {
     background-color: lightblue;
-   
 }
 
 .tabs {
     width: 100%;
     padding: 0px;
     margin: 10px auto;
-    text-align: center;   
+    text-align: center;
 }
 
     .tabs > input {
@@ -19,7 +18,7 @@
         padding: 12px;
         border: 1px solid #C0C0C0;
         background: #FFFFFF;
-        text-align:left;
+        text-align: left;
     }
 
     .tabs > label {
@@ -43,5 +42,53 @@
         background: #FFFFFF;
     }
 
-#tab_1:checked ~ #txt_1 ,
-#tab_2:checked ~ #txt_2 { display: block;}
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2 {
+    display: block;
+}
+
+
+#select_group {
+    margin-left: 130px;
+}
+
+#select_discipline {
+    margin-left: 30px;
+}
+
+#gr1::selection ~ #base_students_gr1,
+#gr2::selection ~ #base_students_gr2 {
+    display: block;
+}
+
+.bl-scroll {
+    width: 95%;
+    max-height: 200px; /*Высота блока после которой начнется прокрутка*/
+    display: inline-block;
+    overflow-x: hidden; /*непосредственно прокрутка*/
+    margin: 10px -3px;
+    padding-top: 1px;
+    margin-left: 20px;
+}
+
+#body {
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #096BAA;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #096BAA;
+}
