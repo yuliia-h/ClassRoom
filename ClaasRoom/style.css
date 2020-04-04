@@ -1,3 +1,47 @@
 ﻿body {
     background-color: lightblue;
+   
 }
+
+.tabs {
+    width: 100%;
+    padding: 0px;
+    margin: 10px auto;
+    text-align: center;   
+}
+
+    .tabs > input {
+        display: none;
+    }
+
+    .tabs > div {
+        display: none;
+        padding: 12px;
+        border: 1px solid #C0C0C0;
+        background: #FFFFFF;
+        text-align:left;
+    }
+
+    .tabs > label {
+        display: inline-block;
+        padding: 7px;
+        /*margin: 0 -5px -1px 0;*/
+        margin-right: 20px;
+        margin-top: -5px;
+        margin-bottom: -1px;
+        text-align: center;
+        color: #666666;
+        border: 1px solid #C0C0C0;
+        background: #3399FF;
+        cursor: pointer;
+    }
+
+    .tabs > input:checked + label {
+        color: #000000;
+        border: 1px solid #C0C0C0;
+        border-bottom: 1px solid #FFFFFF;
+        background: #FFFFFF;
+    }
+
+#tab_1:checked ~ #txt_1 ,
+#tab_2:checked ~ #txt_2 { display: block;}
