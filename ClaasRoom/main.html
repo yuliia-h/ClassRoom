@@ -3,24 +3,91 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
 </head>
 <body>
     <div class="tabs">
-        <input type="radio" name="inset" value="" id="tab_1" >
+        <input type="radio" name="inset" value="" id="tab_1" checked>
         <label for="tab_1">Работа в классе</label>
 
-        <input type="radio" name="inset" value="" id="tab_2" >
+        <input type="radio" name="inset" value="" id="tab_2">
         <label for="tab_2">Контрольные работы</label>
 
         <div id="txt_1">
-            <p>Произвольное содержимое...</p>
-            <p>Произвольное содержимое...</p>
-            <p>Произвольное содержимоефывафыавыфваывфачывсмаывфапывапвыап...</p>
+            <form name="selected">
+                <select id="select_group">
+                    <option id="gr1">DevEducation 9/12/19 group 1 </option>
+                    <option id="gr2">DevEducation 9/12/19 group 2 </option>
+                </select>
+                <select id="select_discipline">
+                    <option>C#</option>
+                    <option>HTML & CSS</option>
+                    <option>JavaScript</option>
+                    <option>Unit тестирование в С#</option>
+                    <option>Web API</option>
+                    <option>SQL</option>
+                    <option>Entity Framework</option>
+                </select>
+                <br />
+
+            </form>
+
+            <div class="bl-scroll" for="gr1">
+                <div id="ID">ID</div>
+                <div id="Avatar">Ava</div>
+                <div id="Name">Name</div>
+                <div id="Score">
+                    <select name="selectoptions">
+                        <option value="option0"></option>
+                        <option value="option1">1</option>
+                        <option value="option2">2</option>
+                        <option value="option3">3</option>
+                        <option value="option4">4</option>
+                        <option value="option5">5</option>
+                        <option value="option6">6</option>
+                        <option value="option7">7</option>
+                        <option value="option8">8</option>
+                        <option value="option9">9</option>
+                        <option value="option10">10</option>
+                        <option value="option11">11</option>
+                        <option value="option12">12</option>
+                    </select>
+                </div>
+                <div id="MidScore">
+                    midSc
+                </div>
+                <br/>
+
+                <div id="ID">ID</div>
+                <div id="Avatar">Ava</div>
+                <div id="Name">Name</div>
+                <div id="Score">
+                    <select name="selectoptions">
+                        <option value="option0"></option>
+                        <option value="option1">1</option>
+                        <option value="option2">2</option>
+                        <option value="option3">3</option>
+                        <option value="option4">4</option>
+                        <option value="option5">5</option>
+                        <option value="option6">6</option>
+                        <option value="option7">7</option>
+                        <option value="option8">8</option>
+                        <option value="option9">9</option>
+                        <option value="option10">10</option>
+                        <option value="option11">11</option>
+                        <option value="option12">12</option>
+                    </select>
+                </div>
+                <div id="MidScore">
+                    midSc
+                </div>
+            </div>
         </div>
+
+
         <div id="txt_2">
             <p>Вторая вкладка</p>
         </div>
