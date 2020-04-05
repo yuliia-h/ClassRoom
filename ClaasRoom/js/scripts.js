@@ -14,36 +14,18 @@ const data = JSON.parse(localStorage.getItem('items'));
 //}
 
 const liMaker = (text) => {
-    let newDiv = document.createElement('div');
-     //<div id = "Score" >
-     //   <select name="selectoptions">
-     //       <option value="option0">-</option>
-     //       <option value="option1">1</option>
-     //       <option value="option2">2</option>
-     //       <option value="option3">3</option>
-     //       <option value="option4">4</option>
-     //       <option value="option5">5</option>
-     //       <option value="option6">6</option>
-     //       <option value="option7">7</option>
-     //       <option value="option8">8</option>
-     //       <option value="option9">9</option>
-     //       <option value="option10">10</option>
-     //       <option value="option11">11</option>
-     //       <option value="option12">12</option>
-     //   </select>
-     //</div >
-    
+    let newDiv = document.createElement('div');   
     let sel = document.createElement('select');
-    let opt = document.createElement('option');
-    opt.value = 1;
-    opt.text = 1;
-    sel.appendChild(opt);
-    let newDiv1 = document.createElement('div');
+    sel.append(new Option('-', 0));  
 
-    newDiv1.appendChild(sel);
+    for (let i = 1; i <= 12; i++) {
+        sel.append(new Option(i, i));
+    }   
+
     newDiv.textContent = text;
-    document.getElementById('myDiv').appendChild(newDiv); 
-    document.getElementById('myDiv').appendChild(newDiv1);  
+    let d = document.getElementById('myDiv');
+    d.appendChild(newDiv);
+    d.appendChild(sel);
 }
 
 document.getElementById('mainForm').addEventListener('submit', function (e) {
