@@ -7,46 +7,50 @@ let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem
 localStorage.setItem('items', JSON.stringify(itemsArray));
 const data = JSON.parse(localStorage.getItem('items'));
 
-//const liMaker = (text) => {
-//  const li = document.createElement('li');
-//    li.textContent = text;
-//    ul.appendChild(li);
-//}
-
-const liMaker = (text) => {
-    let newDiv = document.createElement('div');   
-    let divSelect = document.createElement('div');
+const selectorMaker = () => {
     let sel = document.createElement('select');
     sel.id = 'mainSelect';
-    sel.append(new Option('-', 0));  
+    sel.append(new Option('-', 0));
 
     for (let i = 1; i <= 12; i++) {
         sel.append(new Option(i, i));
     }
 
-    newDiv.textContent = text;
+    return sel;
+}
 
-    // divSelect.appendChild(sel).appendChild(newDiv);
-    // divSelect.appendChild(newDiv);
-    
+const getNewId = () => {
+    return itemsArray.length;
+
+}
+
+const studentMaker = (text) => {
+    let idDiv = document.createElement('div');
+    idDiv.textContent = getNewId();
+    let nameDiv = document.createElement('div');
+    nameDiv.textContent = text;
+    let newDiv = document.createElement('div');    
+    newDiv.id = 'stdLineDiv';
     let d = document.getElementById('myDiv');
-    let d1 = document.getElementById('myDiv1');
-    d.appendChild(sel);
-    d.appendChild(document.createElement('div', text='  '))
-    d.appendChild(sel);
+    newDiv.appendChild(idDiv);
+    newDiv.appendChild(nameDiv);
     
+    for (let i = 0; i < 5; i++)
+        newDiv.appendChild(selectorMaker());  
+    
+    d.appendChild(newDiv);       
 }
 
 document.getElementById('mainForm').addEventListener('submit', function (e) {
   e.preventDefault();
   itemsArray.push(input.value);
   localStorage.setItem('items', JSON.stringify(itemsArray));
-  liMaker(input.value);
+  studentMaker(input.value);
   input.value = "";
 });
 
 data.forEach(item => {
-  liMaker(item);
+  studentMaker(item);
 });
 
 document.getElementById('clearButton').addEventListener('click', function () {
