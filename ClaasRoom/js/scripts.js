@@ -19,14 +19,23 @@ const selectorMaker = () => {
     return sel;
 }
 
-const liMaker = (text) => {
-    let newDiv = document.createElement('div');
-    newDiv.textContent = text;
+const getNewId = () => {
+    return itemsArray.length;
+}
+
+const studentMaker = (text) => {
+    let idDiv = document.createElement('div');
+    idDiv.textContent = getNewId();
+    let nameDiv = document.createElement('div');
+    nameDiv.textContent = text;
+    let newDiv = document.createElement('div');    
     newDiv.id = 'stdLineDiv';
     let d = document.getElementById('myDiv');
+    newDiv.appendChild(idDiv);
+    newDiv.appendChild(nameDiv);
     
     for (let i = 0; i < 5; i++)
-        newDiv.appendChild(selectorMaker());
+        newDiv.appendChild(selectorMaker());  
     
     d.appendChild(newDiv);       
 }
@@ -35,12 +44,12 @@ document.getElementById('mainForm').addEventListener('submit', function (e) {
   e.preventDefault();
   itemsArray.push(input.value);
   localStorage.setItem('items', JSON.stringify(itemsArray));
-  liMaker(input.value);
+  studentMaker(input.value);
   input.value = "";
 });
 
 data.forEach(item => {
-  liMaker(item);
+  studentMaker(item);
 });
 
 document.getElementById('clearButton').addEventListener('click', function () {
