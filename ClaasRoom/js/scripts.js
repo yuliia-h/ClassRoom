@@ -21,6 +21,7 @@ const selectorMaker = () => {
 
 const getNewId = () => {
     return itemsArray.length;
+
 }
 
 const studentMaker = (text) => {
