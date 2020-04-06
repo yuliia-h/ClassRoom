@@ -2,8 +2,12 @@
     background-color: lightblue;
 }
 
+#myDiv * {
+    display: inline; 
+}
+
 .tabs {
-    width: 800px;
+    width: 95%;
     float: none;
     position: relative;
     margin: 7px 20% 7px 20%;
