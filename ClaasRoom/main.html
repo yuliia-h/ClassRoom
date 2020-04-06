@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="styleR.css"/>
     <script src="script.js"></script>
 </head>
-<body>
-    <!--<div class="header">-->
-
-    <div  align="center">
-        <!--<h1 id="Title">Журнал успеваемости</h1>-->
-        <h1>Журнал успеваемости</h1>        
-    </div>
+<body id="colorBody"> 
+    <header>
+        <div>
+            <h1>Журнал успеваемости</h1>
+        </div>
+    </header>    
     <div class="tabs">
         <input type="radio" name="inset" value="" id="tab_1" checked>
         <label for="tab_1">Работа в классе</label>
@@ -40,29 +39,18 @@
             </form>
             <div class="bd_gr1" for="gr1">
                 <div id="ID">ID</div>
-                <div id="Name">Name</div>
-                <!--<div id="Score">
-            <select name="selectoptions">
-                <option value="option0">-</option>
-                <option value="option1">1</option>
-                <option value="option2">2</option>
-                <option value="option3">3</option>
-                <option value="option4">4</option>
-                <option value="option5">5</option>
-                <option value="option6">6</option>
-                <option value="option7">7</option>
-                <option value="option8">8</option>
-                <option value="option9">9</option>
-                <option value="option10">10</option>
-                <option value="option11">11</option>
-                <option value="option12">12</option>
-            </select>
-        </div>-->
+                <div id="Name">Name</div>              
                 <div id="MidScore">midSc</div>
                 <br />
                 <hr id="line" />                
             </div>
-            <div id="myDiv"><div id="myDiv1"></div></div>
+            <div id="studDiv">
+                <div id="myDiv">
+                    <div id="myDiv1">
+                    </div>
+                </div>
+            </div>
+            
             <form id="mainForm">
                 <input id="item" type="text" placeholder="Добавьте ФИО студента...">
             </form>

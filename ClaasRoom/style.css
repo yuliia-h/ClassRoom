@@ -1,19 +1,24 @@
-﻿body {
-    background-color: lightblue;
+﻿﻿body {
+   
 }
 
-#myDiv * {
-    display: inline; 
+#colorBody {
+    background-color: lightgray;
+}
+
+header {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
 }
 
 .tabs {
     width: 95%;
-    float: none;
-    position: relative;
-    margin: 7px 20% 7px 20%;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
+    padding: 0px;
+    margin: 10px auto;
+    text-align: center;    
 }
 
     .tabs > input {
@@ -22,13 +27,16 @@
 
     .tabs > div {
         display: none;
-        padding: 20px 10px 10px 10px;
+        padding: 12px;
         border: 1px solid #C0C0C0;
         background: #FFFFFF;
         text-align: left;
+       
     }
 
     .tabs > label {
+        background-color: lavender;
+        padding: 10px;
         border-radius: 5px 5px 0 0;
         color: #08C;
         font-size: 20px;
@@ -48,15 +56,14 @@
         color: #000000;
         border: 1px solid #C0C0C0;
         border-bottom: 1px solid #FFFFFF;
-        background: #FFFFFF;
+        background: #FFFFFF;       
     }
 
 #tab_1:checked ~ #txt_1,
 #tab_2:checked ~ #txt_2 {
-    border-radius: 0px 20px 20px 20px;
     display: block;
+    border-radius: 0px 20px 20px 20px;   
 }
-
 
 #select_group {
     margin-left: 25px;
@@ -69,9 +76,15 @@
 
 .bd_gr1 {
     width: 95%;
-    max-height: 50px; 
-    display: inline-block;   
+    max-height: 50px;
+    display: inline-block;
     margin: 10px -3px;
     padding-top: 1px;
-    margin-left: 20px;    
+    margin-left: 20px;
 }
+
+
+#studDiv * {
+    display: inline;
+}
+
