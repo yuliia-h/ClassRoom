@@ -6,6 +6,8 @@
     background-color: lightgray;
 }
 
+
+
 header {
     margin: 20px;
 }
@@ -81,10 +83,16 @@ h1 {
     margin: 10px -3px;
     padding-top: 1px;
     margin-left: 20px;
+    display:inline;
 }
 
+#dateFormDiv {
+    float:right;
+}
 
 #stdLineDiv * {
-    display: inline;
+    display:inline-block;
 }
-
+#nameDiv {
+    width:300px;
+}
