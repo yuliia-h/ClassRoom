@@ -1,13 +1,13 @@
 ﻿
-#ID {
+#ID {    
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: auto;
+    /*justify-content: center;*/
+    /*overflow: auto;*/
     width: 30px;
-    height: 40px;
+    height: 60px;
     float: left;
-    margin: 1px;
+    margin: 1px;   
 }
 
 #Avatar {
@@ -16,19 +16,19 @@
     justify-content: center;
     overflow: auto;
     width: 40px;
-    height: 40px;
+    /*height: 60px;*/
     float: left;
     margin: 1px;
 }
 
-#Name {
+#Name {    
     display: flex;
     align-items: center;
     overflow: auto;
-    width: 300px;
-    height: 40px;
+    width: 284px;
+    height: 60px;
     float: left;
-    margin: 1px;
+    padding-left: 0px; 
 }
 
 #Score {
@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: center;
     width: 40px;
-    height: 40px;
+    /*height: 40px;*/
     float: left;
     margin: 1px;
 }
@@ -44,10 +44,10 @@
 #MidScore {
     display: flex;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     float: left;
-    margin: 1px;
+    margin: 5px;
 }
 
 #Title {
